@@ -3,7 +3,7 @@ version: '2'
 
 services:
   elasticsearch:
-    image: elasticsearch/elasticsearch:7.5.2
+    image: elasticsearch:7.5.2
     environment:
       - cluster.name=docker-cluster
       - bootstrap.memory_lock=true
@@ -15,6 +15,6 @@ services:
     ports:
       - "9200:9200"
   kibana:
-    image: kibana/kibana:7.5.2
+    image: kibana:7.5.2
     ports:
       - "5601:5601"
